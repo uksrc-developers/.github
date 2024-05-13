@@ -1,5 +1,5 @@
-# UKSRC Developers repository guideline
-
+# UKSRC Developers
+The UKSRC Developer organisation is aimed at hosting the repositories of UKSRC work.
 ___
 The UKSRC Developers GitHub oraganisation serves to help facilitate easier sharing and centralisation of codes, 
 workflows and packages created by and for the UKSRC. In order achieve the ease of sharing, we have recommended practices
