@@ -14,7 +14,9 @@ Readme.md file to be described in the **Initial Repository** section.
 
 In the following sections we will describe how workflow repositories should be treated, initial repository 
 recommendations, non workflow repositories, and finish with recommended but optional components.
----
+
+--- 
+
 # **IMPORTANT:**
 
 ___
@@ -28,19 +30,16 @@ value of those variables should **NOT** be shared on the repository.
 
 We forgo uploading in and output data to have a lower storage requirement of repositories.
 
----
 ## Workflows
 
-___
 For workflow repositories, UKSRC requirements are intentionally being aligned with the 
 [SRC_Net Scientific Workload Gitlab](https://gitlab.com/ska-telescope/src/src-workloads) requirements, so that any 
-workflow repository that initially lives in the UKSRC developers organisation, can easily migrate to the SRC_Net 
-repository when it is ready to do so. There is only one difference, we require that the definition files of containers
-be uploaded, whereas the SRC_Net repository lists this as optional data. 
----
+workflow repository that initially lives in the UKSRC developers organisation can easily migrate to the SRCNet 
+repository when it is ready to do so. There is only one difference: we require that the definition files of containers
+be uploaded, whereas the SRCNet repository lists this as optional data. 
+
 ## Initial Repositories
 
-___
 When initiating a new repository, a Readme.md file should be created. This should contain: 
 - The purpose of the code in the repository
 - Description of the repository and the code in it
@@ -51,12 +50,11 @@ When initiating a new repository, a Readme.md file should be created. This shoul
 These components are there to facilitate understanding how the repository fits into the wider UKSRC efforts, to attempt
 to prevent unintentional duplication of efforts happening in parallel when they could be joined together, and to provide
 an understanding of what the repository will eventually be.
----
+
 ## Non Workflows
 
-___
 For any repositories that have a release or stable version, meaning that part of the repository is intended to be used 
-already, there is additional requirements. 
+already, there are additional requirements. 
 
 ### Readme.md Files
 Readme.md file should contain more information. As with the **Initial Repositories**, the Readme should
@@ -84,34 +82,35 @@ In addition to the expansion of the initial repository requirements, developers 
 
 These requirements serve multiple purposes. On the developer side, they are there to help onboard future developers that 
 may take over working on the repositories. On the user side, they are there to help standardise what is to be expected 
-in the Readme of a repository so that they can find the correct code for their goals.
+in the Readme of a repository so that a user can find the correct code for their goals.
 
-If external documentation exists for the repository, such as a Pypi page for pip installable pythong packages, we ask 
+If external documentation exists for the repository, such as a Pypi page for pip installable python packages, we ask 
 that such external documentation be linked in the Readme.
 
-After reading the Readme.md file, users and developers who previously were unfamiliar with the work, should know what 
+After reading the Readme.md file, users and developers who previously were unfamiliar with the work should know what 
 inputs they would need for this code to be used as intended, what the outputs should look like, and they should be able 
 to use the repository with minimal difficulties.
 
 #### Future Work
 If the repository is still actively being developed, or aims to have future development efforts done to it, we ask that 
-any developmental goals be listed and described in the end of the Readme file. If Jira tickets or confluence pages exists for any of this work, we 
+any developmental goals be listed and described in the end of the Readme file. If Jira tickets or Confluence pages exist for any of this work, we 
 ask that they be linked to.
 
 #### Optional additions
-Nice to have additions that could be beneficial if provided could contain, but are not limited to:
+'Nice to have' additions that could be beneficial if provided could contain, but are not limited to:
 - Link to Demo video of how to use the repository
 - Description of how to use the repository for work that may not have been within the original intention
 - Relevant information to Profiling data, when accompanied by an analysis of this data and the performance
 - How to use the repository in an automatic fashion, if it was not initially designed to be automatic
 
 ### Container Definition Files
+
 For any repository that relies on the use, or recommends the use of containers, such as Docker, Podman or Singularity 
-images, we require that **NO** fully built containers/images be uploaded. Instead, the container definition files be 
-provided where possible and links to container repos be provided if such a container was used. The purpose of this is 
+images, we require that **NO** fully built containers/images be uploaded. Instead, the container definition files should be 
+provided where possible and links to container repos should be provided if such a container was used. The purpose of this is 
 to help developers understand what libraries and software requirements go into a container and to make it easier to 
 change the containers when necessary. If a container is required, then the software requirements in the container need
 not be listed in the software requirements section of the Readme. If using a container is optional, we ask that the 
 software Requirements section of the Readme list all software and libraries, and mark the ones that should be in a 
 container.
----
+
